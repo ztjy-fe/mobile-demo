@@ -5,19 +5,9 @@
 </template>
 
 <script>
-import { UserApi } from '@/api/index'
-import { UserMock } from '@/mock/index'
 
 export default {
-	name: 'App',
-	created () {
-		// mock
-		UserMock.getUserInfoMock()
-		UserApi.getUserInfo({
-			params: {}}, (res) => {
-			console.log(res)
-		})
-	}
+	name: 'App'
 }
 </script>
 

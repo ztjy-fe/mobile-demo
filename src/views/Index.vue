@@ -1,19 +1,27 @@
 <template>
 	<div class="hello">
-		<h1 v-statistic obj-id="172.16.208.105">{{ msg }}</h1>
+		<hello-world></hello-world>
 	</div>
 </template>
 
 <script>
 import pv from '@/mixins/pv'
+import HelloWorld from '@/components/HelloWorld.vue'
+import { UserApi } from '@/api/index'
+import { UserMock } from '@/mock/index'
 
 export default {
-	name: 'HelloWorld',
+	name: 'Index',
 	mixins: [pv],
-	data () {
-		return {
-			msg: 'Welcome to Your Vue.js App'
-		}
+	components: {
+		HelloWorld
+	},
+	created () {
+		// mock
+		UserMock.loginMock()
+		UserApi.login({}, response => {
+			console.log(response)
+		})
 	}
 }
 </script>
@@ -23,5 +31,8 @@ export default {
 	h1{
 		font-weight: normal;
 		font-size: 12px;
+	}
+	.hello{
+		margin-top: 60px;
 	}
 </style>

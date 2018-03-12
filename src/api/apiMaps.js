@@ -23,15 +23,9 @@ default:
 const path = _path => BASE_API + _path
 
 export const SYSTEM = {
-	// 用户相关
+	// 用户
 	USER: {
 		// 登录
-		LOGIN: path('/user/login'),
-
-		// 用户信息
-		INFO: path('/user/info'),
-
-		// 登出
-		LOGOUT: path('/user/logout')
+		LOGIN: path('/user/login')
 	}
 }
