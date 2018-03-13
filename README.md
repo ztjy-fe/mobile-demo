@@ -1,6 +1,6 @@
 # mobile-scaffolding demo
 
-> A Vue.js project for mobile html5 based on ztjy-fe/scaffolding
+> A Vue.js project for mobile html5 based on ztjy-fe/mobile-scaffolding
 
 ## Build Setup
 
