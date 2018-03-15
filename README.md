@@ -5,8 +5,11 @@
 ## Build Setup
 
 ``` bash
-# clone
-git clone https://github.com/ztjy-fe/mobile-demo.git
+# szy-cli install
+npm install -g szy-cli
+
+# szy-cli create
+szy create project-name
 
 # install dependencies
 npm install
