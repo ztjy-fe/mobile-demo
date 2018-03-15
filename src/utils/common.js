@@ -11,8 +11,8 @@ export default {
 		return getCookie(USER_TOKEN)
 	},
 
-	setToken (token) {
-		return setCookie(USER_TOKEN, token, 10)
+	setCookie (name, value, days) {
+		return setCookie(name, value, days)
 	},
 
 	removeToken () {
