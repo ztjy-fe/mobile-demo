@@ -4,6 +4,7 @@ module.exports = {
 	"plugins": {
 		"postcss-import": {},
 		"postcss-url": {},
+		"postcss-cssnext": {},
 		// to edit target browsers: use "browserslist" field in package.json
 		"autoprefixer": {},
 		// 以750px设计稿为例, 1rem对应75px

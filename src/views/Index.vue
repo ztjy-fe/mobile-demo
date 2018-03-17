@@ -28,11 +28,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-	h1{
-		font-weight: normal;
-		font-size: 12px;
-	}
+@import '../assets/css/base.css';
+
 	.hello{
-		margin-top: 60px;
+		display: flex;
+		margin-top: 60px;/*no*/
+
+		& h1{
+			font-weight: normal;
+			font-size: var(--mainFontSize);
+			@apply --default-theme;
+		}
 	}
 </style>
