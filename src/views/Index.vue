@@ -32,11 +32,10 @@ export default {
 
 	.hello{
 		display: flex;
-		margin-top: 60px;/*no*/
+		margin-top: 40%;
 
 		& h1{
-			font-weight: normal;
-			font-size: var(--mainFontSize);
+			font-weight: var(--main-font-weight);
 			@apply --default-theme;
 		}
 	}
