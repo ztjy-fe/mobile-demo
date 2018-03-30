@@ -6,7 +6,7 @@ export const loginMock = () => {
 	Mock.mock(ApiMaps.SYSTEM.USER.LOGIN, {
 		'returncode': 10000,
 		'message': 'success',
-		'data': {
+		'body': {
 			'token|2': 'admin'
 		}
 	})
